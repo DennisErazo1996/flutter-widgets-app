@@ -65,8 +65,8 @@ class _CustomListTile extends StatelessWidget {
             builder: (context) =>  const ButtonsScreen(),
           ),
         );*/
-        context.pushNamed(ButtonsScreen.name);
-        //context.push(menuItems.link);
+        //context.pushNamed(ButtonsScreen.name);
+        context.push(menuItems.link);
         //Navigator.pushNamed(context, menuItems.link);
       },
       hoverColor: Colors.green[70],
