@@ -25,6 +25,11 @@ const appMenuItems = <MenuItem>[
       link: '/cards',
       icon: Icons.credit_card_rounded),
   MenuItem(
+      title: 'Progress Indicators',
+      subTitle: 'Generales y Controlados',
+      link: '/progress',
+      icon: Icons.refresh_rounded),
+  MenuItem(
       title: 'Animaciones',
       subTitle: 'Animaciones en Flutter',
       link: '/animated',
@@ -49,9 +54,4 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Controles de UI',
       link: '/ui_controls',
       icon: Icons.settings_rounded),
-  MenuItem(
-      title: 'Progress',
-      subTitle: 'Progress',
-      link: '/progress',
-      icon: Icons.timeline_rounded),
 ];
