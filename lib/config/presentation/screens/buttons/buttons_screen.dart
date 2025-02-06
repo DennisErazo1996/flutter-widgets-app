@@ -67,9 +67,11 @@ class _ButtonsView extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(Icons.save_as, color: Colors.white),
             style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(colors.primary)),
+                backgroundColor: WidgetStatePropertyAll(colors.primary)),
           ),
-           CustomButton(color: colors.primary,)
+          CustomButton(
+            color: colors.primary,
+          )
         ],
       ),
     );
@@ -77,24 +79,24 @@ class _ButtonsView extends StatelessWidget {
 }
 
 class CustomButton extends StatelessWidget {
-  
   final Color color;
 
   const CustomButton({super.key, required this.color});
 
   @override
   Widget build(BuildContext context) {
-    return  ClipRRect(
+    return ClipRRect(
       borderRadius: BorderRadius.circular(50),
       child: Material(
         color: color,
         child: InkWell(
-          onTap: () {
-            
-          },
+          onTap: () {},
           child: const Padding(
-            padding: EdgeInsets.all(15),
-            child: Text('Hola Mundo', style: TextStyle(color: Colors.white),)),
+              padding: EdgeInsets.all(15),
+              child: Text(
+                'Hola Mundo',
+                style: TextStyle(color: Colors.white),
+              )),
         ),
       ),
     );

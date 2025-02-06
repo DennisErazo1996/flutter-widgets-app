@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 const cards = <Map<String, dynamic>>[
   {'elevation': 0.0, 'label': 'Elevation 0'},
@@ -21,6 +22,12 @@ class CardsScreen extends StatelessWidget {
         title: const Text('Cards Screen'),
       ),
       body: const _CardsView(),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.arrow_back_ios_new_rounded),
+        onPressed: () {
+          context.pop();
+        },
+      ),
     );
   }
 }
@@ -41,9 +48,9 @@ class _CardsView extends StatelessWidget {
               _CardType3(label: cards['label'], elevation: cards['elevation'])),
           ...cards.map((cards) =>
               _CardType4(label: cards['label'], elevation: cards['elevation'])),
-              const SizedBox(
-                height: 50,
-              )
+          const SizedBox(
+            height: 50,
+          )
         ],
       ),
     );
@@ -126,7 +133,7 @@ class _CardType3 extends StatelessWidget {
     final colors = Theme.of(context).colorScheme;
 
     return Card(
-      color: colors.surfaceVariant,
+      color: colors.surfaceContainerHighest,
       shape: RoundedRectangleBorder(
           borderRadius: const BorderRadius.all(Radius.circular(10)),
           side: BorderSide(color: colors.outline)),
@@ -164,28 +171,27 @@ class _CardType4 extends StatelessWidget {
     return Card(
       clipBehavior: Clip.hardEdge,
       shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(10)),
-          ),
+        borderRadius: BorderRadius.all(Radius.circular(10)),
+      ),
       elevation: elevation,
       child: Stack(
         children: [
-      
-          Image.network('https://picsum.photos/id/${elevation.toInt()}/600/350',
-          height: 350,
-          fit: BoxFit.cover,
+          Image.network(
+            'https://picsum.photos/id/${elevation.toInt()}/600/350',
+            height: 350,
+            fit: BoxFit.cover,
           ),
           Align(
               alignment: Alignment.topRight,
               child: Container(
                 decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20))
-                ),
+                    color: Colors.white,
+                    borderRadius:
+                        BorderRadius.only(bottomLeft: Radius.circular(20))),
                 child: IconButton(
                     onPressed: () {},
                     icon: const Icon(Icons.more_vert_rounded)),
               )),
-        
         ],
       ),
     );
