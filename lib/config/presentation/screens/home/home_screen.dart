@@ -68,7 +68,7 @@ class _CustomListTile extends StatelessWidget {
         context.push(menuItems.link);
         //Navigator.pushNamed(context, menuItems.link);
       },
-      hoverColor: Colors.green[70],
+      hoverColor: color.primary,
     );
   }
 }
