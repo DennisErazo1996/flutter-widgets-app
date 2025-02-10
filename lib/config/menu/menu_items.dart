@@ -30,6 +30,11 @@ const appMenuItems = <MenuItem>[
       link: '/progress',
       icon: Icons.refresh_rounded),
   MenuItem(
+      title: 'Snackbar y dialogos',
+      subTitle: 'Indicadores en pantalla',
+      link: '/snackbar',
+      icon: Icons.info_outline_rounded),
+  MenuItem(
       title: 'Animaciones',
       subTitle: 'Animaciones en Flutter',
       link: '/animated',
@@ -44,11 +49,6 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Scroll Infinito',
       link: '/infinite_scroll',
       icon: Icons.arrow_circle_down_rounded),
-  MenuItem(
-      title: 'Snackbar',
-      subTitle: 'Snackbar',
-      link: '/snackbar',
-      icon: Icons.notifications_rounded),
   MenuItem(
       title: 'Controles de UI',
       subTitle: 'Controles de UI',
