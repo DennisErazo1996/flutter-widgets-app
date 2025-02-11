@@ -40,6 +40,11 @@ const appMenuItems = <MenuItem>[
       link: '/animated',
       icon: Icons.animation_rounded),
   MenuItem(
+      title: 'Ui Controls + Tiles',
+      subTitle: 'Serie de Controles de UI de Flutter',
+      link: '/ui_controls',
+      icon: Icons.settings_rounded),
+  MenuItem(
       title: 'Tutorial de App',
       subTitle: 'Tutorial de App',
       link: '/app_tutorial',
@@ -49,9 +54,4 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Scroll Infinito',
       link: '/infinite_scroll',
       icon: Icons.arrow_circle_down_rounded),
-  MenuItem(
-      title: 'Controles de UI',
-      subTitle: 'Controles de UI',
-      link: '/ui_controls',
-      icon: Icons.settings_rounded),
 ];
