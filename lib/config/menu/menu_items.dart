@@ -46,7 +46,7 @@ const appMenuItems = <MenuItem>[
       icon: Icons.settings_rounded),
   MenuItem(
       title: 'Tutorial de App',
-      subTitle: 'Tutorial de App',
+      subTitle: 'Tutorial introductorio de la App',
       link: '/app_tutorial',
       icon: Icons.video_call_rounded),
   MenuItem(
