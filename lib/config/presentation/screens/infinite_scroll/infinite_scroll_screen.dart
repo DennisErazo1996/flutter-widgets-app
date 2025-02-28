@@ -40,15 +40,17 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
   }
 
   Future loadNextPage() async {
+
     if( isLoading ) return;
     isLoading = true;
-    setState(() {
-      
-    });
+    setState(() {});
 
     await Future.delayed(const Duration(seconds: 2));
 
     addFiveImages();
+    isLoading = false;
+    setState(() {});
+    
   }
 
   void addFiveImages(){
@@ -58,10 +60,7 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     imagesIds.addAll(
       [1, 2, 3, 4, 5].map((e) => lastId + e)
     );
-
-    setState(() {
-      
-    });
+    setState(() {});
 
   }
 
