@@ -54,4 +54,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Scroll Infinito',
       link: '/infinite_scroll',
       icon: Icons.arrow_circle_down_rounded),
+  MenuItem(
+      title: 'Counter',
+      subTitle: 'RiverPod Counter',
+      link: '/counter',
+      icon: Icons.add),
 ];
