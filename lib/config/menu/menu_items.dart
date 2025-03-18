@@ -59,4 +59,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'RiverPod Counter',
       link: '/counter',
       icon: Icons.add),
+  MenuItem(
+      title: 'Theme Changer',
+      subTitle: 'Cambiar tema de la aplicacion',
+      link: '/theme-changer',
+      icon: Icons.color_lens_rounded),
 ];

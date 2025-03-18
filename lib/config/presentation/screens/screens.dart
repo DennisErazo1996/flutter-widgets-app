@@ -1,4 +1,5 @@
 
+
 export 'package:widgets_app/config/presentation/screens/buttons/buttons_screen.dart';
 export 'package:widgets_app/config/presentation/screens/cards/cards_screen.dart';
 export 'package:widgets_app/config/presentation/screens/home/home_screen.dart';
@@ -9,5 +10,7 @@ export 'package:widgets_app/config/presentation/screens/infinite_scroll/infinite
 export 'package:widgets_app/config/presentation/screens/snackbar/snackbar_screen.dart';
 export 'package:widgets_app/config/presentation/screens/ui_controls/ui_controls_screen.dart';
 export 'package:widgets_app/config/presentation/screens/counter/counter_screen.dart';
+export 'package:widgets_app/config/presentation/screens/theme_changer/theme_changer_screen.dart';
+
 
 
